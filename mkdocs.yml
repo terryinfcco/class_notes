@@ -1,0 +1,8 @@
+site_name: GT_PKB
+theme: 
+  name: 'mkdocs'
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  
+

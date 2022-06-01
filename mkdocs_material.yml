@@ -1,0 +1,12 @@
+site_name: GT_PKB
+theme: 
+  name: 'material'
+  palette:
+    scheme: slate
+    primary: lime
+    accent: pink
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  
+

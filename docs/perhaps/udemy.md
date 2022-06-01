@@ -1,0 +1,1 @@
+Maybe work out which courses you actually want to take. You've got several web development courses and several python courses. Maybe you should pick one web development course and finish it, then pick up pieces of the other courses that weren't covered in the one you did. 
