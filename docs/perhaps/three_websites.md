@@ -1,0 +1,1 @@
+The three websites are todo/perhaps, blog/learning log, and notes. Maybe set up a set of scripts and maybe a bash menu that would let me add a new todo, edit existing todos, add a new blog entry, etc. 
