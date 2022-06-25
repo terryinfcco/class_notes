@@ -371,6 +371,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#block-title" class="md-nav__link">
+    Block Title
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -564,6 +571,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#block-title" class="md-nav__link">
+    Block Title
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -611,6 +625,15 @@
 <span class="x">&lt;/h1&gt;</span>
 <span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
 </code></pre></div>
+<h2 id="block-title">Block Title</h2>
+<p>This will allow unique titles on each page of the website (what goes on the tab in the browser)</p>
+<p>So in about.html he put:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}</span><span class="x">About John Elder</span><span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
+</code></pre></div>
+<p>Then in base.html:</p>
+<div class="highlight"><pre><span></span><code><span class="x">&lt;title&gt;</span><span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}</span><span class="x">Hello, world! </span><span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x">&lt;/title&gt;</span>
+</code></pre></div>
+<p>What happens is if the page we're displaying has a block named title, that name will be used, so in the above example the about page will show About John Elder. However on a page that doesn't have a block named title we'll see Hello, world! (like on our home page since we haven't added a block title to it).</p>
 
               
             </article>
