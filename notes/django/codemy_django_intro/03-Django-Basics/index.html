@@ -588,6 +588,29 @@
 </code></pre></div>
 <p>The 'home' and 'about' refer to the names in the urlpatterns list in urls.py.  Later if we want to change a path, we don't have to change it on every page, we just have to change the path in urls.py.</p>
 <h2 id="extends-base-file">Extends Base File</h2>
+<p>Sharing common things among web pages. </p>
+<ul>
+<li>
+<p>Create a template file called base.html in pages/templates and paste the bootstrap template.</p>
+</li>
+<li>
+<p>At beginning of body in base.html put a block where the code that's unique to the various web pages goes. </p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
+</code></pre></div>
+<ul>
+<li>Then in each web page put the content of that web page in:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">extends</span> <span class="s1">&#39;base.html&#39;</span> <span class="cp">%}</span><span class="x"></span>
+
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">&lt;h1&gt;</span>
+<span class="x">    Home Page</span>
+<span class="x">&lt;/h1&gt;</span>
+<span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
+</code></pre></div>
 
               
             </article>
