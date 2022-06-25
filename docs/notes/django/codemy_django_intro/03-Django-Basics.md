@@ -18,5 +18,27 @@ The 'home' and 'about' refer to the names in the urlpatterns list in urls.py.  L
 
 ## Extends Base File
 
+Sharing common things among web pages. 
 
+* Create a template file called base.html in pages/templates and paste the bootstrap template.
 
+* At beginning of body in base.html put a block where the code that's unique to the various web pages goes. 
+
+  ```django
+  {% block content %}
+  {% endblock %}
+  ```
+
+* Then in each web page put the content of that web page in:
+
+  ```django
+  {% extends 'base.html' %}
+  
+  {% block content %}
+  <h1>
+      Home Page
+  </h1>
+  {% endblock %}
+  ```
+
+  
