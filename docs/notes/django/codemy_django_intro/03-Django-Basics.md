@@ -41,4 +41,20 @@ Sharing common things among web pages.
   {% endblock %}
   ```
 
-  
+## Block Title
+
+This will allow unique titles on each page of the website (what goes on the tab in the browser)
+
+So in about.html he put:
+
+```django
+{% block title %}About John Elder{% endblock %}
+```
+
+Then in base.html:
+
+```django
+<title>{% block title %}Hello, world! {% endblock %}</title>
+```
+
+What happens is if the page we're displaying has a block named title, that name will be used, so in the above example the about page will show About John Elder. However on a page that doesn't have a block named title we'll see Hello, world! (like on our home page since we haven't added a block title to it).
