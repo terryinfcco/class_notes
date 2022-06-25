@@ -1,0 +1,48 @@
+## Set up a Development Environment
+* install Python3
+* install Pip3
+* install venv
+* Make sure you have a terminal app / a command line.
+
+## Create a Virtual Environment
+``` bash
+mkdir code
+cd code
+python3 -m venv venv
+. venv/bin/activate
+pip freeze 
+```
+## Install Django - make sure venv is active
+```pip install django```
+
+
+## Create a new Django Project
+``` bash
+# Make sure you're in code and the venv is active
+mkdir djangoproject
+cd djangoproject
+django-admin startproject mysite .
+# This creates a mysite subdirectory and a manage.py file
+```
+
+## Run the Django Devlopment Server
+``` bash
+# Make sure you're in code/djangoproject
+python manage.py runserver
+# go to localhost:8000 in a browser to make sure you get successful install screen
+```
+
+## Fix the migration errors
+```
+# To fix the initial migrations errors you get
+python3 manage.py migrate
+# This also creates the admin section which can be accessed at localhost:8000/admin
+```
+
+## Create the Superuser
+```
+python manage.py createsuperuser
+# give a username, email, and password
+# Now can login at localhost:8000/admin/
+```
+
