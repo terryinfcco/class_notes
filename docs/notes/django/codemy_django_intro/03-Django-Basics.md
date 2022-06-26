@@ -51,6 +51,8 @@ So in about.html he put:
 {% block title %}About John Elder{% endblock %}
 ```
 
+This is a separate block from block content and isn't nested.
+
 Then in base.html:
 
 ```django
