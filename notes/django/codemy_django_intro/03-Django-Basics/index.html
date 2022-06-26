@@ -630,6 +630,7 @@
 <p>So in about.html he put:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}</span><span class="x">About John Elder</span><span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
 </code></pre></div>
+<p>This is a separate block from block content and isn't nested.</p>
 <p>Then in base.html:</p>
 <div class="highlight"><pre><span></span><code><span class="x">&lt;title&gt;</span><span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}</span><span class="x">Hello, world! </span><span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x">&lt;/title&gt;</span>
 </code></pre></div>
