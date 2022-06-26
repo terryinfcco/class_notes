@@ -46,3 +46,6 @@ python manage.py createsuperuser
 # Now can login at localhost:8000/admin/
 ```
 
+## Notes
+
+I think I did the last two steps on the pi 400 in the basement, but they didn't exist when I moved upstairs. So they either don't get put on gitlab or I forgot to do a git push at the end.
