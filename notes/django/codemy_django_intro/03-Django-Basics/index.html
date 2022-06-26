@@ -378,6 +378,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#add-a-navbar" class="md-nav__link">
+    Add a Navbar
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -578,6 +585,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#add-a-navbar" class="md-nav__link">
+    Add a Navbar
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -635,6 +649,19 @@
 <div class="highlight"><pre><span></span><code><span class="x">&lt;title&gt;</span><span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}</span><span class="x">Hello, world! </span><span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x">&lt;/title&gt;</span>
 </code></pre></div>
 <p>What happens is if the page we're displaying has a block named title, that name will be used, so in the above example the about page will show About John Elder. However on a page that doesn't have a block named title we'll see Hello, world! (like on our home page since we haven't added a block title to it).</p>
+<h2 id="add-a-navbar">Add a Navbar</h2>
+<p>Grabs the navbar example at the top of the Bootstrap 4.1 Components navbar page and pastes it into base.html right below the opening body tag. </p>
+<p>At the opening nav tag, he changed navbar-light to navbar-dark and bg-light to bg-dark. </p>
+<p>Again in base.html, he wraps the block content and endblock statements in a div with the class of container, and adds a line break above the div that he just added.</p>
+<p>Then clean up the navbar. Delete the form that's a search box. Deletes the dropdown menu. Deletes the disabled link, and the home link. Change the label that says Navbar to John Elder.</p>
+<p>Then change the navbar links to Django style:</p>
+<div class="highlight"><pre><span></span><code><span class="x">          &lt;li class=&quot;nav-item&quot;&gt;</span>
+<span class="x">            &lt;a class=&quot;nav-link&quot; href=&quot;</span><span class="cp">{%</span> <span class="k">url</span> <span class="s1">&#39;home&#39;</span> <span class="cp">%}</span><span class="x">&quot;&gt;Home&lt;/a&gt;</span>
+<span class="x">          &lt;/li&gt;</span>
+<span class="x">          &lt;li class=&quot;nav-item&quot;&gt;</span>
+<span class="x">            &lt;a class=&quot;nav-link&quot; href=&quot;</span><span class="cp">{%</span> <span class="k">url</span> <span class="s1">&#39;about&#39;</span> <span class="cp">%}</span><span class="x">&quot;&gt;About&lt;/a&gt;</span>
+<span class="x">          &lt;/li&gt;</span>
+</code></pre></div>
 
               
             </article>
