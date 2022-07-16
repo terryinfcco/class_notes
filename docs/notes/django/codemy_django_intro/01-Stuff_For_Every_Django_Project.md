@@ -7,11 +7,11 @@
 
 ## Create a Virtual Environment
 ``` bash
-mkdir code
-cd code
-python3 -m venv venv
-. venv/bin/activate
-pip freeze 
+mkdir code # Create a directory for our code
+cd code # change to the code directory
+python3 -m venv venv # Creates a venv named venv
+source venv/bin/activate # activates the venv
+pip freeze # shows a list of what's installed in the venv 
 ```
 ## Install Django - make sure venv is active
 ```pip install django```
