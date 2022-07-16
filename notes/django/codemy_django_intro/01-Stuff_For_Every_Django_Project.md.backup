@@ -1,0 +1,52 @@
+## Set up a Development Environment
+* install Python3
+* install Pip3
+* install venv
+* You need a text editor
+* Make sure you have a terminal app / a command line.
+
+## Create a Virtual Environment
+``` bash
+mkdir code
+cd code
+python3 -m venv venv # Creates a venv named venv
+source venv/bin/activate # activates the venv
+pip freeze # shows a list of what's installed in the venv 
+```
+## Install Django - make sure venv is active
+```pip install django```
+
+
+## Create a new Django Project
+``` bash
+# Make sure you're in code and the venv is active
+mkdir djangoproject
+cd djangoproject
+django-admin startproject mysite .
+# This creates a mysite subdirectory and a manage.py file
+```
+
+## Run the Django Devlopment Server
+``` bash
+# Make sure you're in code/djangoproject
+python manage.py runserver
+# go to localhost:8000 in a browser to make sure you get successful install screen
+```
+
+## Fix the migration errors
+```
+# To fix the initial migrations errors you get
+python3 manage.py migrate
+# This also creates the admin section which can be accessed at localhost:8000/admin
+```
+
+## Create the Superuser
+```
+python manage.py createsuperuser
+# give a username, email, and password
+# Now can login at localhost:8000/admin/
+```
+
+## Notes
+
+I think I did the last two steps on the pi 400 in the basement, but they didn't exist when I moved upstairs. So they either don't get put on gitlab or I forgot to do a git push at the end.
