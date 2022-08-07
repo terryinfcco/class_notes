@@ -7,8 +7,8 @@
 
 ## Create a Virtual Environment
 ``` bash
-mkdir code # Create a directory for our code
-cd code # change to the code directory
+mkdir code
+cd code
 python3 -m venv venv # Creates a venv named venv
 source venv/bin/activate # activates the venv
 pip freeze # shows a list of what's installed in the venv 
