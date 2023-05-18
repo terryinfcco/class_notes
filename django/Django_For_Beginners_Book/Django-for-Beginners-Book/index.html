@@ -1,0 +1,3011 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Chapter_2_Hello_World_App/">
+      
+      
+        <link rel="next" href="../../Udemy_Django_Academind/section1/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.13">
+    
+    
+      
+        <title>Django for Beginners - GT_PKB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#django-for-beginners" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="GT_PKB" class="md-header__button md-logo" aria-label="GT_PKB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GT_PKB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Django for Beginners
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="GT_PKB" class="md-nav__button md-logo" aria-label="GT_PKB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    GT_PKB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Another Terry Attempt at Notes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2022-12-16-notes-about-silver-bullet/" class="md-nav__link">
+        Notes About Silver Bullet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Cornell_Notes/" class="md-nav__link">
+        Cornell (kind of) Notes Template
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Photo_Gallery_ideas.md/" class="md-nav__link">
+        Photo Gallery ideas.md
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Setting%20Up%20A%20For%20Real%20Website%21/" class="md-nav__link">
+        Setting Up A For Real Website!
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Using%20Minima%20Dark%20Theme/" class="md-nav__link">
+        Using Minima Dark Theme
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../diary/" class="md-nav__link">
+        Objects needed by the Digital Diary program
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../thoughts/" class="md-nav__link">
+        Where My Head Is.
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          DigitalDiary
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          DigitalDiary
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DigitalDiary/Diary_Flow/" class="md-nav__link">
+        Flow of Digital Diary
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DigitalDiary/NewCTDiaryLayout/" class="md-nav__link">
+        Terry Tech Diary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          Journal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Journal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-11-21-Setting-Up-Jekyll-Site/" class="md-nav__link">
+        2021 11 21 Setting Up Jekyll Site
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-11-21-welcome-to-jekyll/" class="md-nav__link">
+        Welcome to Jekyll!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-11-24-Minima-Dark/" class="md-nav__link">
+        2021 11 24 Minima Dark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-11-25-Arch-Aargh/" class="md-nav__link">
+        2021 11 25 Arch Aargh
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-11-26-Xubuntu-I3/" class="md-nav__link">
+        Install Xubuntu and I3wm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-11-27-Rsync-Jekyll/" class="md-nav__link">
+        Rsync and Jekyll
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-12-03-Simplest-Web-Developer-Path/" class="md-nav__link">
+        Simplest Web Developer Path 2021 - James Q. Quick
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-12-05-Learning-Plans/" class="md-nav__link">
+        Learning Plans
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-12-07-Learning-Plans-Update/" class="md-nav__link">
+        Learning Plans Updated
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-12-09-1st/" class="md-nav__link">
+        Today's Plan
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-12-10-1st/" class="md-nav__link">
+        Still Confused
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2021-12-17-1st/" class="md-nav__link">
+        Thinking about Log4J
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-01-03-1st/" class="md-nav__link">
+        What to do about Blogging
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-01-04-1st/" class="md-nav__link">
+        Plowing Ahead
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-01-06-1st/" class="md-nav__link">
+        Log
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-01-24-1st/" class="md-nav__link">
+        Jekyll Again
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-05-26-1st/" class="md-nav__link">
+        And Jekyll Again
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-05-31-Organizing-My-Thoughts/" class="md-nav__link">
+        Organizing My Thoughts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-06-04-Django-Better-Programming/" class="md-nav__link">
+        Django Journal at Better Programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-08-09-Ncurses_and_Tkinter/" class="md-nav__link">
+        Plan for Ncurses and Tkinter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-08-10-tkinter-and-django-for-todo-list/" class="md-nav__link">
+        Tkinter, Django, ToDo List, and Study Plans
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-08-16-jekyll-bluetooth/" class="md-nav__link">
+        Jekyll and Bluetooth Arch Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-08-17-jekyll-beelinki3/" class="md-nav__link">
+        Jekyll Kubuntu Terrystudent Arch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-09-26-script-to-create-jekyll-post/" class="md-nav__link">
+        Script to Create Jekyll Post
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-09-29-backups-of-beelink-i3/" class="md-nav__link">
+        Backups Of Beelink I3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-10-07-freenove-pi-and-python-objects/" class="md-nav__link">
+        Freenove Pi and Python Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-10-25-kanboard-on-pi4-server/" class="md-nav__link">
+        Kanboard on Pi4 Server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-10-25-working-on-alias-for-new-jekyll-post-script/" class="md-nav__link">
+        Working on alias for New Jekyll Post script
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-10-26-made-a-jekyll-post-manager/" class="md-nav__link">
+        Made a Jekyll Post Manager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-10-26-testing-subprocess/" class="md-nav__link">
+        Testing Subprocess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-10-26-try-%232-at-adding-a-new-entry-in-jekyll-manager/" class="md-nav__link">
+        Try #2 at adding a new entry in jekyll manager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-10-27-current-thoughts/" class="md-nav__link">
+        Current Thoughts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-10-27-jekyll-manager-curses-version/" class="md-nav__link">
+        Jekyll Manager Curses Version
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/2022-10-27-more-jekyll-manager-curses-notes/" class="md-nav__link">
+        More Jekyll Manager Curses Notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/journal_2021_05_31.md/" class="md-nav__link">
+        Journal 2021 05 31.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/journal_2022_01_17.md/" class="md-nav__link">
+        Journal 2022 01 17.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/journal_2022_01_26.md/" class="md-nav__link">
+        Journal 2022 01 26.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/journal_2022_01_27.md/" class="md-nav__link">
+        Journal 2022 01 27.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/journal_2022_01_28.md/" class="md-nav__link">
+        Journal 2022 01 28.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/journal_2022_01_30.md/" class="md-nav__link">
+        Journal 2022 01 30.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/journal_2022_02_02.md/" class="md-nav__link">
+        Journal 2022 02 02.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Journal/journal_2022_02_02a.md/" class="md-nav__link">
+        Journal 2022 02 02a.md
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/2022-10-30-python-oop-book-chapter-2/" class="md-nav__link">
+        Object oriented Python Chapter 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/2023-02-15-atlas---tkinter-video-1-introduction/" class="md-nav__link">
+        Atlas - Tkinter Video 1 Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/2023-02-15-atlas-tkinter-video-2-how-to-use-widgets/" class="md-nav__link">
+        Atlas Tkinter Video 2 How to Use Widgets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/Chapter2/" class="md-nav__link">
+        Object oriented Python Chapter 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/Codemy_tkinter_Video4.md/" class="md-nav__link">
+        Codemy tkinter Video4.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/Codemy_tkinter_Video5.md/" class="md-nav__link">
+        Codemy tkinter Video5.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/Invent_Your_Own_Computer_Games_with_Python/" class="md-nav__link">
+        Invent Your Own Computer Games with Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/Object_Oriented_Python/" class="md-nav__link">
+        Object Oriented Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/guizero_images.md/" class="md-nav__link">
+        Guizero images.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/guizero_text_widget.md/" class="md-nav__link">
+        Guizero text widget.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/guizero_window_background.md/" class="md-nav__link">
+        Guizero window background.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/guizero_window_title.md/" class="md-nav__link">
+        Guizero window title.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/pygame_kcc_vid1.md/" class="md-nav__link">
+        Pygame kcc vid1.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/pygame_kcc_vid2.md/" class="md-nav__link">
+        Pygame kcc vid2.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/tkinter_grid.md/" class="md-nav__link">
+        Tkinter grid.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/tkinter_images.md/" class="md-nav__link">
+        Tkinter images.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/tkinter_labels.md/" class="md-nav__link">
+        Tkinter labels.md
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_18" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_18" id="__nav_11_18_label" tabindex="0">
+          Codemy SQLite3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_18_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_18">
+          <span class="md-nav__icon md-icon"></span>
+          Codemy SQLite3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/Codemy_SQLite3/Create_connection/" class="md-nav__link">
+        Using SQLite3 Databases with Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/Codemy_SQLite3/ManageTables/" class="md-nav__link">
+        Adding Data in SQLite3
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          WebDevelopment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          WebDevelopment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WebDevelopment/HeadFirst_HTML_and_CSS_Notes/" class="md-nav__link">
+        How to Use a Head First Book to study
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WebDevelopment/html_css/" class="md-nav__link">
+        HTML/CSS John Smilga Udemy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WebDevelopment/wa4e_notes/" class="md-nav__link">
+        Web Applications for Everyone
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          Django
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Django
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dennis_ivy_todo/" class="md-nav__link">
+        Dennis ivy todo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
+          Codemy CRUD App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13_2">
+          <span class="md-nav__icon md-icon"></span>
+          Codemy CRUD App
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Codemy%20CRUD%20App/Codemy%20Django%20CRM%20Course%20February%202023/" class="md-nav__link">
+        Codemy Django CRM Course February 2023
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_3" id="__nav_13_3_label" tabindex="0">
+          CodemySimpleBlog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13_3">
+          <span class="md-nav__icon md-icon"></span>
+          CodemySimpleBlog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%201/" class="md-nav__link">
+        Codemy Simple Blog Video 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%2011/" class="md-nav__link">
+        Codemy Simple Blog Video 11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%2012/" class="md-nav__link">
+        Codemy Simple Blog Video 12
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%202/" class="md-nav__link">
+        Codemy Simple Blog Video 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%203/" class="md-nav__link">
+        Codemy Simple Blog Video 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%204/" class="md-nav__link">
+        Codemy Simple Blog Video 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%205/" class="md-nav__link">
+        Codemy Simple Blog Video 5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%206/" class="md-nav__link">
+        Codemy Simple Blog Video 6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%207/" class="md-nav__link">
+        Codemy Simple Blog Video 7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%208/" class="md-nav__link">
+        Codemy Simple Blog Video 8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodemySimpleBlog/Codemy%20Simple%20Blog%20Video%209%20%26%2010/" class="md-nav__link">
+        Codemy Simple Blog Video 9 & 10
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_4" id="__nav_13_4_label" tabindex="0">
+          Codemy ToDo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13_4">
+          <span class="md-nav__icon md-icon"></span>
+          Codemy ToDo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Codemy_ToDo/Codemy%20Django%20ToDo%20Page%201/" class="md-nav__link">
+        Codemy Todo List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Codemy_ToDo/Codemy%20Django%20ToDo%20Page%202/" class="md-nav__link">
+        Codemy Django ToDo Page 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Codemy_ToDo/Codemy%20Django%20ToDo%20Page%203/" class="md-nav__link">
+        Codemy Django ToDo Page 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Codemy_ToDo/Codemy%20Django%20ToDo%20Page%204/" class="md-nav__link">
+        Codemy Django ToDo Page 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Codemy_ToDo/Codemy%20Django%20ToDo%20Page%205/" class="md-nav__link">
+        Codemy Django ToDo Page 5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Codemy_ToDo/Codemy%20Django%20ToDo%20Page%206/" class="md-nav__link">
+        Codemy Django ToDo Page 6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Codemy_ToDo/Codemy%20Django%20ToDo%20Page%207/" class="md-nav__link">
+        Codemy Django ToDo Page 7
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_5" id="__nav_13_5_label" tabindex="0">
+          Coding Entrepenuers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13_5">
+          <span class="md-nav__icon md-icon"></span>
+          Coding Entrepenuers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Coding_Entrepenuers/Udemy%20Course%20Videos%203%20-4/" class="md-nav__link">
+        Udemy Course Videos 3  4
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_6" id="__nav_13_6_label" tabindex="0">
+          DjangoWednesday
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13_6">
+          <span class="md-nav__icon md-icon"></span>
+          DjangoWednesday
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DjangoWednesday/Django%20Wednesday%20Video1/" class="md-nav__link">
+        Django Wednesday Video1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_7" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_7" id="__nav_13_7_label" tabindex="0">
+          Django For Beginners Book
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_7_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_13_7">
+          <span class="md-nav__icon md-icon"></span>
+          Django For Beginners Book
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter_1_Initial_Setup/" class="md-nav__link">
+        Chapter 1 Initial Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter_2_Hello_World_App/" class="md-nav__link">
+        Django for Beginners
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Django for Beginners
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Django for Beginners
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build-websites-with-python-django" class="md-nav__link">
+    Build websites with Python &amp; Django
+  </a>
+  
+    <nav class="md-nav" aria-label="Build websites with Python &amp; Django">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#william-s-vincent" class="md-nav__link">
+    William S. Vincent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chapter-one" class="md-nav__link">
+    Chapter One
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter One">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-folder-where-were-going-to-build-our-first-project" class="md-nav__link">
+    Create a folder where we're going to build our first project.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-create-a-virtual-environment-within-this-new-directory-use-the-format" class="md-nav__link">
+    To create a virtual environment within this new directory use the format:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate-the-virtual-environment" class="md-nav__link">
+    Activate the virtual environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-django" class="md-nav__link">
+    Install Django
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-django-project" class="md-nav__link">
+    First Django Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runserver-to-test-installation" class="md-nav__link">
+    Runserver to test installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-editor-and-git" class="md-nav__link">
+    Code Editor and Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-2-hello-world-app" class="md-nav__link">
+    Chapter 2: Hello World App
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 2: Hello World App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initial-setup" class="md-nav__link">
+    Initial Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-app" class="md-nav__link">
+    Create an App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-first-view" class="md-nav__link">
+    Create First View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-pages-app" class="md-nav__link">
+    Chapter 3 Pages App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-set-up" class="md-nav__link">
+    Initial Set Up
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_8" id="__nav_13_8_label" tabindex="0">
+          Udemy Django Academind
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13_8">
+          <span class="md-nav__icon md-icon"></span>
+          Udemy Django Academind
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Udemy_Django_Academind/section1/" class="md-nav__link">
+        Django Practical Guide Section 1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_9" id="__nav_13_9_label" tabindex="0">
+          Very Academy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13_9">
+          <span class="md-nav__icon md-icon"></span>
+          Very Academy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Very_Academy/Course%20Introduction/" class="md-nav__link">
+        Course Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Very_Academy/Django%20Initiation/" class="md-nav__link">
+        Django Initiation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_10" id="__nav_13_10_label" tabindex="0">
+          Codemy django intro
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13_10">
+          <span class="md-nav__icon md-icon"></span>
+          Codemy django intro
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codemy_django_intro/00-Home/" class="md-nav__link">
+        00-Codemy Django Intro Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codemy_django_intro/01-Stuff_For_Every_Django_Project/" class="md-nav__link">
+        01 Stuff For Every Django Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codemy_django_intro/02-Set_Up_App/" class="md-nav__link">
+        02-These Are Steps to Add an App to a Django Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../codemy_django_intro/03-Django-Basics/" class="md-nav__link">
+        03-Django Basics
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          Flask
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          Flask
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../flask/Flask%20Corey%20Schaefer%20Video%201/" class="md-nav__link">
+        Flask Corey Schaefer Video 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../flask/Flask%20Corey%20Schaefer%20Video%202/" class="md-nav__link">
+        Flask Corey Schaefer Video 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../flask/Flask_Tutorial_for_Beginners-Clever_%20Programmer_%20Youtube/" class="md-nav__link">
+        Flask Tutorial for Beginners - Clever Programmer Youtube
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../flask/Paul%20Baumgartner%20Flask%20Day%201/" class="md-nav__link">
+        Paul Baumgartner Flask Day 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../flask/bootcamp_section_7/" class="md-nav__link">
+        Flask Bootcamp Jose Section 7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14_6" id="__nav_14_6_label" tabindex="0">
+          Codemy Intro
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14_6">
+          <span class="md-nav__icon md-icon"></span>
+          Codemy Intro
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../flask/Codemy-Intro/Codemy%20Intro%20to%20Flask/" class="md-nav__link">
+        Codemy Intro to Flask
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+          Tkinter
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Tkinter
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tkinter/vid1_window_basics/" class="md-nav__link">
+        Bro Code Youtube Channel Tkinter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tkinter/vid2_labels/" class="md-nav__link">
+        Bro Code Youtube Channel Video 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build-websites-with-python-django" class="md-nav__link">
+    Build websites with Python &amp; Django
+  </a>
+  
+    <nav class="md-nav" aria-label="Build websites with Python &amp; Django">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#william-s-vincent" class="md-nav__link">
+    William S. Vincent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chapter-one" class="md-nav__link">
+    Chapter One
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter One">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-folder-where-were-going-to-build-our-first-project" class="md-nav__link">
+    Create a folder where we're going to build our first project.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-create-a-virtual-environment-within-this-new-directory-use-the-format" class="md-nav__link">
+    To create a virtual environment within this new directory use the format:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate-the-virtual-environment" class="md-nav__link">
+    Activate the virtual environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-django" class="md-nav__link">
+    Install Django
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-django-project" class="md-nav__link">
+    First Django Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runserver-to-test-installation" class="md-nav__link">
+    Runserver to test installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-editor-and-git" class="md-nav__link">
+    Code Editor and Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-2-hello-world-app" class="md-nav__link">
+    Chapter 2: Hello World App
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 2: Hello World App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initial-setup" class="md-nav__link">
+    Initial Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-app" class="md-nav__link">
+    Create an App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-first-view" class="md-nav__link">
+    Create First View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-pages-app" class="md-nav__link">
+    Chapter 3 Pages App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-set-up" class="md-nav__link">
+    Initial Set Up
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="django-for-beginners">Django for Beginners</h1>
+<h2 id="build-websites-with-python-django">Build websites with Python &amp; Django</h2>
+<h3 id="william-s-vincent">William S. Vincent</h3>
+<h3 id="chapter-one">Chapter One</h3>
+<h4 id="create-a-folder-where-were-going-to-build-our-first-project">Create a folder where we're going to build our first project.</h4>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>code
+<span class="nb">cd</span><span class="w"> </span>code
+mkdir<span class="w"> </span>ch1-setup
+<span class="nb">cd</span><span class="w"> </span>ch1-setup
+</code></pre></div>
+<h4 id="to-create-a-virtual-environment-within-this-new-directory-use-the-format">To create a virtual environment within this new directory use the format:</h4>
+<div class="highlight"><pre><span></span><code>python3 -m venv &lt;name_of_env&gt;
+</code></pre></div>
+<p>It is up to the developer to choose a proper environment name but a common choice is to call it .venv.</p>
+<h4 id="activate-the-virtual-environment">Activate the virtual environment</h4>
+<div class="highlight"><pre><span></span><code> source .venv/bin/activate
+</code></pre></div>
+<p>The shell prompt now has the environment name (.venv) prefixed which indicates that the
+virtual environment is active. Any Python packages installed or updated within this location will
+be confined to the active virtual environment. To deactivate and leave a virtual environment type deactivate.</p>
+<h4 id="install-django">Install Django</h4>
+<p><div class="highlight"><pre><span></span><code>python -m pip install django~=4.0.0
+</code></pre></div>
+The comparison operator ∼= ensures that subsequent security updates for Django, such as 4.0.1, 4.0.2, and so on are automatically installed. Note that while it is possible to use the shorter version of pip install <package>, it is a best practice to use the longer but more explicit form of python -m pip install <package> to ensure that the correct version of Python is used. This can be an issue if you have multiple versions of Python installed on your computer.</p>
+<h4 id="first-django-project">First Django Project</h4>
+<p>A Django project can have almost any name but we will use django_project in this book. 
+<div class="highlight"><pre><span></span><code>(.venv) &gt; django-admin startproject django_project .
+</code></pre></div></p>
+<p>It’s worth pausing here to explain why you should add a period (.) to the end of the previous command. If you don't include the period, Django creates another django_project directory. This feels redundant to me which is why I prefer adding a period to the end which installs Django in the current directory.</p>
+<h4 id="runserver-to-test-installation">Runserver to test installation</h4>
+<p>Now let’s confirm everything is working by running Django’s internal web server via the
+runserver command. This is suitable for local development purposes, but when it comes time
+to deploy our project’s online we will switch to a more robust WSGI server like Gunicorn.</p>
+<div class="highlight"><pre><span></span><code>python manage.py runserver
+</code></pre></div>
+<h4 id="code-editor-and-git">Code Editor and Git</h4>
+<p>Make sure you have a code editor and git installed. He recommends both the microsoft python extension for vscode and an extension called black which formats python code. </p>
+<h2 id="chapter-2-hello-world-app">Chapter 2: Hello World App</h2>
+<p>In this chapter we will build a Django project that simply says “Hello, World” on the homepage.
+This is the traditional way to start a new programming language or framework. We’ll also work
+with Git for the first time and deploy our code to GitHub.</p>
+<h3 id="initial-setup">Initial Setup</h3>
+<div class="highlight"><pre><span></span><code>%<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/code
+%<span class="w"> </span>mkdir<span class="w"> </span>helloworld
+%<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>helloworld
+</code></pre></div>
+<p>Create a new virtual environment called .venv, activate it, and install Django with Pip as we did
+in the previous chapter.</p>
+<p>Now we’ll use the Django startproject command to make a new project called django_project.
+Don’t forget to include the period (.) at the end of the command so that it is installed in our
+current directory.</p>
+<div class="highlight"><pre><span></span><code><span class="o">(</span>.venv<span class="o">)</span><span class="w"> </span>&gt;<span class="w"> </span>django-admin<span class="w"> </span>startproject<span class="w"> </span>django_project<span class="w"> </span>.
+</code></pre></div>
+<p>Django has added a django_project directory and a manage.py file. Within directory django_project are five new files:
+* <code>__init__.py</code> indicates that the files in the folder are part of a Python package. Without this file, we cannot import files from another directory which we will be doing a lot of in Django!
+* asgi.py allows for an optional Asynchronous Server Gateway Interface to be run
+* settings.py controls our Django project’s overall settings
+* urls.py tells Django which pages to build in response to a browser or URL request
+* wsgi.py stands for Web Server Gateway Interface which helps Django serve our eventual web pages.</p>
+<p>The manage.py file is not part of django_project but is used to execute various Django commands such as running the local web server or creating a new app.</p>
+<p>Let’s try out our new project by using Django’s lightweight built-in web server for local development purposes. The command we’ll use is runserver which is located in manage.py.</p>
+<p>Note that the full command line output will contain additional information including a warning about 18 unapplied migrations. Technically, this warning doesn’t matter at this point. Django is complaining that we have not yet “migrated” our initial database. Since we won’t actually use a database in this chapter the warning won’t affect the end result. However, since warnings are still annoying to see, we can remove it by first stopping the local server with the command Control+c and then running <code>python manage.py migrate</code>.</p>
+<p>What Django has done here is create a SQLite database and migrated its built-in apps provided for us. This is represented by the new file db.sqlite3 in our directory.</p>
+<p>The Django MVT pattern is as follows:
+* Model: Manages data and core business logic
+* View: Describes which data is sent to the user but not its presentation
+* Template: Presents the data as HTML with optional CSS, JavaScript, and Static Assets
+* URL Configuration: Regular-expression components configured to a View</p>
+<p>When you type in a URL, such as https://djangoproject.com, the first thing that happens within our Django project is a URL pattern (contained in urls.py) is found that matches it. The URL pattern is linked to a single view (contained in views.py) which combines the data from the model (stored in models.py) and the styling from a template (any file ending in .html). The view then returns a HTTP response to the user.</p>
+<h3 id="create-an-app">Create an App</h3>
+<p>Django uses the concept of projects and apps to keep code clean and readable. A single top-level Django project can contain multiple apps. Each app controls an isolated piece of functionality. For example, an e-commerce site might have one app for user authentication, another app for payments, and a third app to power item listing details. That’s three distinct apps that all live within one top-level project. How and when you split functionality into apps is somewhat subjective, but in general, each app should have a clear function.</p>
+<div class="highlight"><pre><span></span><code><span class="o">(</span>.venv<span class="o">)</span><span class="w"> </span>%<span class="w"> </span>python3<span class="w"> </span>manage.py<span class="w"> </span>startapp<span class="w"> </span>pages
+</code></pre></div>
+<p>If you look visually at the helloworld directory Django has created within it a new pages directory.</p>
+<p>Let’s review what each new pages app file does:</p>
+<ul>
+<li>admin.py is a configuration file for the built-in Django Admin app</li>
+<li>apps.py is a configuration file for the app itself</li>
+<li>migrations/ keeps track of any changes to our models.py file so it stays in sync with our database</li>
+<li>models.py is where we define our database models which Django automatically translates into database tables</li>
+<li>tests.py is for app-specific tests</li>
+<li>views.py is where we handle the request/response logic for our web app</li>
+</ul>
+<p>Notice that the model, view, and url from the MVT pattern are present from the beginning. The only thing missing is a template which we’ll add shortly. Even though our new app exists within the Django project, Django doesn’t “know” about it until we explicitly add it to the django_project/settings.py file. Add pages.apps.PagesConfig at the bottom.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># django_project/settings.py</span>
+<span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+<span class="s2">&quot;django.contrib.admin&quot;</span><span class="p">,</span>
+<span class="s2">&quot;django.contrib.auth&quot;</span><span class="p">,</span>
+<span class="s2">&quot;django.contrib.contenttypes&quot;</span><span class="p">,</span>
+<span class="s2">&quot;django.contrib.sessions&quot;</span><span class="p">,</span>
+<span class="s2">&quot;django.contrib.messages&quot;</span><span class="p">,</span>
+<span class="s2">&quot;django.contrib.staticfiles&quot;</span><span class="p">,</span>
+<span class="s2">&quot;pages.apps.PagesConfig&quot;</span><span class="p">,</span> <span class="c1"># new</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>What is PagesConfig you might ask? Well, it is the name of the solitary function within the pages/apps.py file at this point.</p>
+<h3 id="create-first-view">Create First View</h3>
+<p>The next step is therefore to create our first view. Start by updating the views.py file in our pages app to look as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># pages/views.py</span>
+<span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">HttpResponse</span>
+
+<span class="k">def</span> <span class="nf">homePageView</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>There are two types of views in Django: function-based views (FBVs) and class-based views (CBVs).
+Our code in this example is a function-based view: it is relatively simple to implement and explicit.
+Django originally started with only FBVs but over time added CBVs which allow for much greater
+code reusability, keeps things DRY (Don’t-Repeat-Yourself), and can be extended via mixins. The
+additional abstraction of CBVs makes them quite powerful and concise, however it also makes
+them harder to read for Django newcomers.</p>
+<p>Because web development quickly becomes repetitive Django also comes with a number of built-
+in generic class-based views (GCBVs) to handle common use cases such as creating a new object, forms, list views, pagination, and so on. We will be using GCBVs heavily in this book in later
+chapters.</p>
+<p>There are therefore technically three ways to write a view in Django: function-based views (FBVs),
+class-based views (CBVs), and generic class-based views (GCBVs). This customization is helpful
+for advanced developers but confusing for newcomers. Many Django developers–including your
+author–prefer to use GCBVs when possible and revert to CBVs or FBVs when required. </p>
+<p>We need to configure our URLs. In your text editor, create a new file called urls.py within the pages app. Then update it with the following code:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># pages/urls.py</span>
+<span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span>
+<span class="kn">from</span> <span class="nn">.views</span> <span class="kn">import</span> <span class="n">homePageView</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">homePageView</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;home&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>On the top line we import path from Django to power our URL pattern and on the next line we
+import our views. By referring to the views.py file as .views we are telling Django to look within
+the current directory for a views.py file and import the view homePageView from there. Our URL pattern has three parts:
+* a Python regular expression for the empty string ""
+* a reference to the view called homePageView
+* an optional named URL pattern22 called "home"</p>
+<p>In other words, if the user requests the homepage represented by the empty string "", Django should use the view called homePageView.</p>
+<p>The last step is to update our django_project/urls.py file. It’s common to have multiple apps within a single Django project, like pages here, and they each need their own dedicated URL path.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># django_project/urls.py</span>
+<span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
+<span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+ <span class="c1"># new</span>
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;admin/&quot;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s2">&quot;pages.urls&quot;</span><span class="p">)),</span> <span class="c1"># new</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>This need for two separate urls.py files is often confusing to beginners. Think of the top-level
+django_project/urls.py as the gateway to various url patterns distinct to each app.</p>
+<h3 id="git">Git</h3>
+<p>initialize (or add) Git to our repository. Make sure you’ve stopped the local server with Control+c, then run the command git init.</p>
+<p>If you then type git status you’ll see a list of changes since the last Git commit. Since this is our
+first commit, this list is all of our changes so far.</p>
+<p>Note that our virtual environment .venv is included which is not a best practice. It should be
+kept out of Git source control since secret information such as API keys and the like are often
+included in it. The solution is to create a new file called .gitignore which tells Git what to
+ignore. In this new file, add a single line for .venv.</p>
+<p>We do want a record of packages installed in our virtual environment. The current best practice is to create a requirements.txt file with this information. The command <code>pip freeze</code> will output the contents of your current virtual environment and by using the &gt; operator we can do all this in one step: output the contents into a new file called requirements.txt.</p>
+<div class="highlight"><pre><span></span><code><span class="o">(</span>.venv<span class="o">)</span><span class="w"> </span>&gt;<span class="w"> </span>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+</code></pre></div>
+<p>We next want to add all recent changes by using the command add -A and then commit the
+changes along with a message (-m) describing what has changed.</p>
+<div class="highlight"><pre><span></span><code><span class="o">(</span>.venv<span class="o">)</span><span class="w"> </span>&gt;<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>-A
+<span class="o">(</span>.venv<span class="o">)</span><span class="w"> </span>&gt;<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;initial commit&quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>existing_repo
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://gitlab.com/terryinfcco/hello-world.git
+git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
+git<span class="w"> </span>push<span class="w"> </span>-uf<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+<p>Note I added an ssh key to gitlab from the beelink i5 kubuntu 21.10 upgraded to 22.04 build. I couldn't make the ssh work, so I finally did the git push with username and password, deleted all the local stuff and then cloned the hello-world repo using ssh. Now it works.</p>
+<h2 id="chapter-3-pages-app">Chapter 3 Pages App</h2>
+<p>In this chapter we will build, test, and deploy a Pages app containing a homepage and about
+page. </p>
+<h2 id="initial-set-up">Initial Set Up</h2>
+<p>As in Chapter 2: Hello World App, our initial set up involves the following steps:</p>
+<ul>
+<li>make a new directory for our code called pages and navigate into it</li>
+<li>create a new virtual environment called .venv and activate it</li>
+<li>install Django</li>
+<li>create a new Django project called django_project</li>
+<li>create a new app called pages</li>
+</ul>
+<div class="highlight"><pre><span></span><code>cd ~/desktop/code
+mkdir pages
+cd pages
+python3 -m venv .venv
+source .venv/bin/activate
+(.venv) python3 -m pip install django~=4.0.0
+(.venv) django-admin startproject django_project .
+(.venv) python3 manage.py startapp pages
+</code></pre></div>
+<p>Remember that even though we added a new app, Django will not recognize it until it is added
+to the INSTALLED_APPS setting within django_project/settings.py. Open your text editor and
+add it to the bottom now:</p>
+<div class="highlight"><pre><span></span><code># django_project/settings.py
+INSTALLED_APPS = [
+&quot;django.contrib.admin&quot;,
+&quot;django.contrib.auth&quot;,
+&quot;django.contrib.contenttypes&quot;,
+&quot;django.contrib.sessions&quot;,
+&quot;django.contrib.messages&quot;,
+&quot;django.contrib.staticfiles&quot;,
+&quot;pages.apps.PagesConfig&quot;, # new
+]
+</code></pre></div>
+<p>Migrate the database with migrate and start the local web server with runserver.</p>
+<div class="highlight"><pre><span></span><code>(.venv) &gt; python manage.py migrate
+(.venv) &gt; python manage.py runserver
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.b4d07000.min.js"></script>
+      
+    
+  </body>
+</html>
