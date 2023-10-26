@@ -1,7 +1,5 @@
 # Another Terry Attempt at Notes
-Right now this is stored at github in the new_mkdocs repository
-
-Be sure to do a git pull before using since I'm playing with it from both the Raspberry Pi 400 in the basement and the Beelink i5 in the 2nd floor office. 
+Right now this is stored at github in the class_notes repository
 
 # Welcome to MkDocs
 

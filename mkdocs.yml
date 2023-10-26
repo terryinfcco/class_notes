@@ -8,5 +8,8 @@ theme:
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
-  
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md  
 
