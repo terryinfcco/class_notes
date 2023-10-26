@@ -47,6 +47,8 @@ django-admin startproject django_project
 - See the default site 
 ``` bash 
 python manage.py runserver
+# To run on a different port
+python manage.py runserver 7000
 ```
 	- Warnings about migrations
 	- Site at localhost:8000 or 127.0.0.1:8000
