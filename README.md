@@ -1,2 +1,4 @@
-# new_mkdocs
-New MkDocs site 
+# Dutch's Class Notes
+
+MkDocs site dedicated to class notes for the zillion classes I've started and nevery finished. Maybe this will be the thing that helps!!
+
