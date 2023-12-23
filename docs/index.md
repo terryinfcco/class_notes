@@ -1,6 +1,9 @@
 # Another Terry Attempt at Notes
 Right now this is stored at github in the class_notes repository
 
+### [Scratchpad](https://dutchdocs.xyz/nextcloud/index.php/apps/notes/)
+
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
