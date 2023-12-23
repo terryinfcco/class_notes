@@ -8,7 +8,7 @@
 * `flask --version` to make sure Flask is installed. He was on 1.1.1  and Python 2.7. So fairly old. We'll see if that messes me up.
 * Create new file `app.py`
 
-````Python
+``` Python
 from flask import Flask
 
 app = Flask(__name__)
