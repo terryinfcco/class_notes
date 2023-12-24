@@ -1,5 +1,5 @@
 ---
-title: More Complicated Data
+title: Models and Databases
 tags:
     - django
     - caleb
