@@ -1,3 +1,10 @@
+---
+title: Codemy Django Simple Blog Series 1
+tags:
+    - django
+    - codemy
+    - django_start
+---
 ## Youtube 37 Video Course
 
 #### Length 18:10 
@@ -7,14 +14,12 @@
 - Set up both the project and an app
 - Create the post model and register it.
 
-So my plan is to watch the video and take notes - not code but flow, bash instructions, etc. Then go back through the same video and write the code.
-
 ### Setup initial urls, views, and templates
 
 - Make directory called simpleblog
-- Create a virtual environment called virt in simpleblog
+- Create a virtual environment called venv in simpleblog 
 - Activate virtual environment
-- Install DJango using pip - he got django 3.0.5. I'm on 4.2.1.
+- Install DJango using pip - he got django 3.0.5. I'm on 5.0 - this should be fun
 - Create Django project called ablog 
 ``` bash
 django-admin startproject ablog

@@ -5,6 +5,8 @@ theme:
     scheme: slate
     primary: blue grey
     accent: pink
+  features:
+    - navigation.footer
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences

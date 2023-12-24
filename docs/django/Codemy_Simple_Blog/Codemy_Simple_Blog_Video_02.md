@@ -2,8 +2,6 @@
 
 #### Length 19:46
 
-So my plan is to watch the video and take notes - not code but flow, bash instructions, etc. Then go back through the same video and write the code.
-
 ## Summary
 
 - Create a home page that loops through the posts in the model and shows the title as a link
