@@ -126,6 +126,7 @@ admin.site.register(Post)
 ```
 - makemigrations and migrate to get the new database to work.
 ``` bash
+python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```  
