@@ -12,11 +12,11 @@
         <link rel="prev" href="../cdjcc6/">
       
       
-        <link rel="next" href="../../Codemy_Django_Intro/00-Home/">
+        <link rel="next" href="../cdjcc8/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -835,10 +835,70 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#create-first-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create First Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-new-model-to-the-admin-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add the New Model to the Admin Section
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cdjcc8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working With Real Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cdjcc9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Detailed View
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1838,6 +1898,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#create-first-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create First Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-new-model-to-the-admin-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add the New Model to the Admin Section
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1885,6 +1963,42 @@
 <li><code>python manage.py migrate</code> </li>
 <li><code>python manage.py createsuperuser</code></li>
 <li>just used terry/jacqui</li>
+<li>Django uses ORM - Object Relational Mappers</li>
+<li>Meaning you write Python stuff and it gets converted to SQL stuff</li>
+<li>Makes converting from a test db like sqlite3 to mariadb or postgres much easier</li>
+</ul>
+<h2 id="create-first-model">Create First Model</h2>
+<ul>
+<li>create models.py inside movies
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+
+<span class="c1"># Django automatically creates an id field unique to each row in the table</span>
+<span class="k">class</span> <span class="nc">Movie</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">()</span>
+</code></pre></div></li>
+<li>Now tell django that we need to create / update our model</li>
+<li>movies in this case is the name of the app in settings.py/INSTALLED_APPS
+<code>python manage.py makemigrations movies</code></li>
+<li>Now migrate the changes - if you're working with multiple apps you can specify an app like in makemigrations
+<code>python manage.py migrate</code></li>
+</ul>
+<h2 id="add-the-new-model-to-the-admin-section">Add the New Model to the Admin Section</h2>
+<ul>
+<li>Create movies/admin.py
+<div class="highlight"><pre><span></span><code><span class="c1"># Import our Model and the Django Admin Stuff</span>
+
+<span class="kn">from</span> <span class="nn">.models</span> <span class="kn">import</span> <span class="n">Movie</span>
+<span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
+
+<span class="c1"># Now register the model with the admin site</span>
+<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Movie</span><span class="p">)</span>
+</code></pre></div></li>
+<li>Now you can add movies on the admin site. But right now the admin page just shows Movie object(1)</li>
+<li>To get the title to show we need to add a method to our class in models.py
+<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> from </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div></li>
 </ul>
 
 
@@ -1935,13 +2049,13 @@
         
         
           
-          <a href="../../Codemy_Django_Intro/00-Home/" class="md-footer__link md-footer__link--next" aria-label="Next: 00-Codemy Django Intro Index">
+          <a href="../cdjcc8/" class="md-footer__link md-footer__link--next" aria-label="Next: Working With Real Data">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                00-Codemy Django Intro Index
+                Working With Real Data
               </div>
             </div>
             <div class="md-footer__button md-icon">
