@@ -14,12 +14,15 @@ tags:
 - Set up both the project and an app
 - Create the post model and register it.
 
-### Setup initial urls, views, and templates
+## Install Django
 
 - Make directory called simpleblog
 - Create a virtual environment called venv in simpleblog 
 - Activate virtual environment
 - Install DJango using pip - he got django 3.0.5. I'm on 5.0 - this should be fun
+
+## Create Django Project
+
 - Create Django project called ablog 
 ``` bash
 django-admin startproject ablog
@@ -29,16 +32,25 @@ django-admin startproject ablog
 python manage.py migrate
 python manage.py runserver
 ```  
+
+## Create Administrative User
+
 To create the administrative user. Used admin for name, and put in an email and password. I used my hotmail email and password jacqui.
 ``` bash 
 python manage.py createsuperuser
 ```
 
 - `python manage.py runserver` and go to localhost:8000/admin and login, then click on the admin user and put in actual first and last name.
+
+## Create Django App
+
 - to create the app under the project.
 ``` bash
 python manage.py startapp theblog
 ``` 
+
+## Connect App and Project
+
 - open the top ablog folder in your text editor
 - Then in ablog/ablog/settings.py add theblog to the INSTALLED_APPS list.
 ``` python
@@ -52,6 +64,9 @@ INSTALLED_APPS = [
     'theblog',
 ]
 ```
+
+## Create App Level URLS file
+
 - In ablog/ablog/urls.py add include to the second import statement, and import include and add theblog/urls.py to the urlpatterns list. This gives our app its own urls.py file.
 ``` python
 from django.urls import path, include
@@ -70,6 +85,9 @@ urlpatterns = [
     path('', views.home, name="home"),
 ]
 ```
+
+## Create First View Using an HTML Template
+
 - In theblog/views.py create a function to define the home page.
 ``` python
 from django.shortcuts import render
@@ -95,7 +113,7 @@ def home(request):
 ```
 - `python manage.py runserver` to ensure that our new home page shows up at localhost:8000
 
-### Now start working on database
+## Build the Model 
 
 - In ablog/theblog/models.py import the User so we can use our admin user, and create our data model and its fields. This is a class based model.
 ``` python
@@ -116,6 +134,9 @@ class Post(models.Model):
 ```
 - Fields are title, author (set up so if author is deleted, all the associated blog posts go away), and body.
 - And create a function `__str__`  function to show the title and the author on the admin page.
+
+## Connect the Model to the App
+
 - in ablog/theblog/admin.py import and register the Post class.
 ``` python
 from django.contrib import admin
@@ -124,10 +145,16 @@ from .models import Post
 # Register your models here.
 admin.site.register(Post)
 ```
+
+## Create the Database
+
 - makemigrations and migrate to get the new database to work.
 ``` bash
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
-```  
+```
+
+## Populate the Database
+
 - Then added two blog posts using the admin page.
