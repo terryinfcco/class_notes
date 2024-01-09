@@ -1,3 +1,10 @@
+---
+title: Create SQLite Connection Codemy.com Video 04 - Codemy
+tags:
+    - python
+    - sqlite3
+---
+
 # Using SQLite3 Databases with Python
 
 ## Create SQLite Connection Codemy.com Video 4

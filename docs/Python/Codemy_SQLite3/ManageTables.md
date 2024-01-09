@@ -1,3 +1,9 @@
+---
+title: Adding Data in SQLite3 Video 06 - Codemy
+tags:
+    - python
+    - sqlite3
+---
 # Adding Data in SQLite3
 
 ## Add One Record to a table - Video 6
