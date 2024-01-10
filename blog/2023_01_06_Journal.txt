@@ -1,0 +1,3 @@
+2023_01_06_Journal
+
+So I have a pi5 that's setup for vnc and has both my blackboard and kanban custom tkinter installed and in the menu. 

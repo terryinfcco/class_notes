@@ -1,0 +1,6 @@
+2023_12_26
+
+Going to finish the Caleb Django crash course and write a script to back up these notes to Dropbox.
+
+I did create the script to backup these notes but I'm really not nuts about the Caleb video. 
+
