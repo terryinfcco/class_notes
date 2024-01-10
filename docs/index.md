@@ -1,7 +1,9 @@
 # Another Terry Attempt at Notes
 Right now this is stored at github in the class_notes repository
 
-### [Scratchpad](https://dutchdocs.xyz/nextcloud/index.php/apps/notes/)
+
+## Use this flatnotes install as a Scratchpad
+### [Scratchpad](http://terryinfcco.xyz:8080)
 
 
 # Welcome to MkDocs
