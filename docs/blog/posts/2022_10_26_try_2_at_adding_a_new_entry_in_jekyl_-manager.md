@@ -1,8 +1,6 @@
 ---
-title: "Try #2 at adding a new entry in jekyll manager"
-date: 2022-10-26 19:53:25
-categories: []
-tags: ["1"]
+title: Try 2 at adding a new entry in jekyll manager - Journal October 26, 2022
+date: 2022-10-26
 ---
 
 # Try #2 at adding a new entry in jekyll manager
