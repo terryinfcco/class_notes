@@ -1,22 +1,27 @@
+# Net Ninja Bootstrap 5 Videos
+
 ## Tutorial 1 Intro and Setup
 
 - Using VSCode - highly recommends it. 
-- Created a folder `bs-5-tutorial` and `index.html` inside it.
-- In index.html he did the `!<tab>` to boilerplate the html
+- Created a github repo `nnbs` so far Video1 folder.
+- In index.html he did `doc<tab>`rather than `!<tab>` to boilerplate the html. But looks identical to me.
 - Changed the title to Net Ninja Pro - the Book and an h1 that says Net Ninja Pro
-- Grabbed the CDD via jsDelivr (the top one, not the one that does popper separately). Place the css tag in the head after the meta links, and paste the javascript link with the script tag at the end of the body.
+- Grabbed the CDN via jsDelivr (the top one, not the one that does popper separately). Place the css tag in the head after the meta links, and paste the javascript link with the script tag at the end of the body.
 - Installed the live server extension in VSCode
 - Then right click in the html file and select live server to see the web page.
 - Create an assets folder under the main folder. Using the github repo that's linked download the two png files and put them in the assets folder.
+- You should have a basic grasp of html and css before you start.
 
 ## Tutorial 2 New Features
 
 - Dropped jQuery - one less dependency
 - Forms revamped
+- New utility classes (positioning, font size, border radius, ...)
 - Jumbotron gone - but fairly easy to replicate
 - Bootstrap icons
 - New Components Offcanvas and Accordion
-
+	- Canvas is ability to have a side, top, or bottom pop up bar
+	- Accordion - expand text by clicking title
 ## Tutorial 3 Colors and Typography
 
 ### Typography

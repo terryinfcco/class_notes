@@ -1,3 +1,4 @@
+#!/bin/bash
 # Script to try to get class notes going locally
 
 cd /home/terry/github/class_notes

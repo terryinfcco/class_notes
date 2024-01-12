@@ -1,7 +1,7 @@
 ---
 title: "Current Thoughts"
 date: 2022-10-27 19:38:26
-categories: [Jekyll Tiddlywiki Mkdocs]
+categories: [Jekyll, Tiddlywiki, Mkdocs]
 tags: []
 ---
 
