@@ -26,7 +26,7 @@
 
 ### Typography
 
-- Bootstrap has default styles that you get as soon as you include the css and javascript links
+- Bootstrap has default styles that you get as soon as you include the css and javascript links. These override the browser's built in defaults.
 - The bootstrap classes that you apply to elements override these defaults.
 - For h1 through h6 can do display classes `<h1 class="display-1">display 1 heading</h1>` - Bigger, non bold font compared to standard h1 .. h6
 - These can be applied to any element, so you can have a paragraph with a display-1 class and get a really big paragraph
@@ -34,6 +34,7 @@
 - Text alignment: text-start is the default - left aligned. Also text-center and text-end.
 - Text decoration: `class="text-decoration-underline"` and `class="text-decoration-line-through"`
 - Font weight: `class="fw-bold"`
+- small tag - not bootstrap `<small>this is small text</small>`
 
 ### Colors
 
