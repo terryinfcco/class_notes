@@ -14,5 +14,6 @@ plugins:
   - search
   - tags:
       tags_file: tags.md
-  - blog
+  - blog:
+      blog_toc: true
 

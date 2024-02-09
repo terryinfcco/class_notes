@@ -1,9 +1,10 @@
 # Another Terry Attempt at Notes
-Right now this is stored at github in the class_notes repository
+#### Right now this is stored at github in the class_notes repository
 
 
 ## Use this flatnotes install as a Scratchpad
 ### [Scratchpad](http://terryinfcco.xyz:8080)
+### [Blog](blog/)
 
 
 # Welcome to MkDocs
