@@ -4,7 +4,7 @@
 
 ## Use this flatnotes install as a Scratchpad
 ### [Scratchpad](http://terryinfcco.xyz:8080)
-### [Blog](blog/)
+### [Blog](blog/index.md)
 
 
 # Welcome to MkDocs
