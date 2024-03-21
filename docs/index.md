@@ -3,7 +3,7 @@
 
 
 ## Use this flatnotes install as a Scratchpad
-### [Scratchpad](http://terryinfcco.xyz:8080)
+### [Scratchpad](http://terryinfcco.xyz:8080){:target="\blank"}
 ### [Blog](blog/index.md)
 
 

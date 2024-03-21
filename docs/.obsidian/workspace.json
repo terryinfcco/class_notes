@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/posts/2022-10-27-more-jekyll-manager-curses-notes.md",
+                "file": "Cornell_Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/posts/2022-10-27-more-jekyll-manager-curses-notes.md",
+                "file": "Cornell_Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/posts/2022-10-27-more-jekyll-manager-curses-notes.md",
+                "file": "Cornell_Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/posts/2022-10-27-more-jekyll-manager-curses-notes.md"
+                "file": "Cornell_Notes.md"
               }
             }
           }
@@ -146,8 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4836565ab39013ee",
+  "active": "6fc7eb7ae2ea423d",
   "lastOpenFiles": [
+    "index.md",
+    "tags.md",
+    "Cornell_Notes.md",
+    "blog/posts/2022-10-27-more-jekyll-manager-curses-notes.md",
     "blog/posts/2023_12_27.md",
     "blog/posts/2023_12_29.md",
     "blog/posts/2022_10_25_kanboard_on_pi4_server.md",
