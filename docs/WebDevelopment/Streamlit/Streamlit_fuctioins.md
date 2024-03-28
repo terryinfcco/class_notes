@@ -1,0 +1,34 @@
+# Streamlit Capabilities
+
+- Video 1
+    - streamlit run main.py  - To run a streamlit program in the terminal
+    - default port is 8501
+    - st.title - Like an H1
+    - st.header - Like an H2
+    - st.subheader - Like an H3
+    - st.text - Plain text
+- Video 2
+    - st.markdown() - just put markdown in the parentheses
+    - #'s for headers - more #'s means smaller header
+    - `**bold text**`
+    - `*italic text*`
+    - `> Put something in block quotes
+    - `st.markdown("1. First Item\n 2. Second Item") # An ordered list
+    - `st.code(str)` Where str = "print('Hello World')"  Not markdown - part of Streamlit
+    - st.markdown(---) # Horizontal rule
+    - `st.markdown('[Google](https://www.google.com/)')` # Link in Markdown
+    - tables are possible - but painful looking IMHO
+    - json feature st.json(json)
+    - emojis possible
+- Video 3
+    - Metric function - able to show numbers with delta to indicate changes over time
+    - tables using pandas library
+    - dataframe is a table that allows sorting by clicking column headers
+- Video 4
+    - Images - can have captions, change height and width
+    - Audio - can specify start time in seconds
+    - Video - can specify start time in seconds
+- Video 5
+    - Button widget - has a value of True or False
+    - text_input - type into a one line field
+    - st.write() - writes text onto web page - not sure how this is different from st.text
