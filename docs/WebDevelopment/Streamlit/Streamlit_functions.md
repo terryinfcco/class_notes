@@ -25,10 +25,51 @@
     - tables using pandas library
     - dataframe is a table that allows sorting by clicking column headers
 - Video 4
-    - Images - can have captions, change height and width
+    - Images - can have captions, change height (he didn't show so ?) and width
     - Audio - can specify start time in seconds
     - Video - can specify start time in seconds
 - Video 5
     - Button widget - has a value of True or False
-    - text_input - type into a one line field
+    - text_input - type into a one line field. Can have line of code above the box
     - st.write() - writes text onto web page - not sure how this is different from st.text
+- Video 6
+    - Download button - takes a file object and needs a file name for the downloaded file.
+- Video 7
+    - Created a list of two images - when he pointed an image element at the list rather than a single image, the images ended up side by side rather than on top of each other.
+    - He also created a list of captions and used that in the image element rather than one caption. And it worked.
+    - Link Button - link_button, text for button and http address are parameters
+- Video 8
+    - Checkbox widget. Each checkbox is a separate widget. Has a value of True or False
+    - Column variable allows to put checkboxes side by side rather than above and below. I suspect this is more versatile than just checkboxes
+- Video 9
+    - Toggle widget - slider appearance. Boolean value of True or False
+    - Again uses columns to put toggles side by side
+- Video 10
+    - Radio buttons - Only one button active at a time.
+    - A title and then a list of button titles in the parameters.
+    - Uses button titles to determine which button is active (True)
+    - Can use index parameter to select which button is active initially, set to None to not select a button initially
+    - Can use disabled parameter to deactivate all the buttons.
+- Video 11
+    - Select Box - dropdown with 2 or more items to select from
+    - First parameter is title for box, second is a list of options
+    - Only one item can be selected
+- Video 12
+    - MultiSelect  - like Select Box but can select more than one item.
+    - First parameter is title for box, second is a list of options, third parameter is default selection
+    - Can be multiple default options
+    - Multiselect returns a list of the selected options
+- Video 13
+    - Slider object - slide to value in a range
+    - First parameter is title of object, 2nd and 3rd are range of slider, 4th is default value
+    - Returns the value of the slider object
+    - He used it to dynamically change the width of an image
+- Video 14
+    - Select slider object - Slider but just to specific values.
+    - First parameter is title, then list with each valid value.
+    - Returns value the slider is on
+- Video 15
+    - Text Input Object - Single line text box
+    - First parameter is title above the box
+    - Returns content of box - can press enter or setup a button
+    
