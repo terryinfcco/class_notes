@@ -72,4 +72,20 @@
     - Text Input Object - Single line text box
     - First parameter is title above the box
     - Returns content of box - can press enter or setup a button
+- Video 16
+    - Number input - Like text input but with + and - at the end
+    - First parameter is title above the box
+    - No need to convert from string to do math like if you used text_input
+- Video 17
+    - Text Area widget - multiline text input
+    - Parameters - title, default value and placeholder value inside the widget
+    - Can also set max characters that can be entered in widget
+    - returns content of text entered inside the widget
+- Video 18
+    - Date input object - returns 2019-03-28
+    - Current date is default starting date but that can be changed
+- Video 19
+    - Time input object - returns 21:45 (I think - wasn't very clear)
+- Video 20
+    - File uploader widget - let's you select more than one file at a time
     
