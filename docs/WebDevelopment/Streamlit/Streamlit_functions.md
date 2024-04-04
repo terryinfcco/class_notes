@@ -88,4 +88,24 @@
     - Time input object - returns 21:45 (I think - wasn't very clear)
 - Video 20
     - File uploader widget - let's you select more than one file at a time
+- Video 21
+    - Color Picker - parameters are a title above and the default (starting color)
+    - Returns a hex code 
+- Video 22
+    - Create a Form 
+    - Use `with` statement - then lists all widgets inside form underneath it
+    - A Submit button is required - when it's pressed all the values returned by the widgets are updated
+    - On the screen there's a border around the form 
+- Video 23
+    - Sidebar Widget
+    - Uses `with` statement and widgets are indented under that
+    - Those all show up on the left side of the screen in a light gray object
+- Video 24
+    - Columns 
+    - Set up columns then add widgets to the columns using with statement
+    - widgets for each column indented under that columns with statement
+- Video 25
+    - Tabs
+    - Create tabs `tab1, tab2, tab3 = ['Football', 'Basketball', 'Hockey']
+    - Then with statements for each tab followed by that tab's widgets
     
