@@ -108,4 +108,14 @@
     - Tabs
     - Create tabs `tab1, tab2, tab3 = ['Football', 'Basketball', 'Hockey']
     - Then with statements for each tab followed by that tab's widgets
-    
+- Video 26
+    - Expander widget - shows single line with a title (he used 'See explanation'), then there's a dropdown with the full explanation. 
+- Video 27
+    - Container widget. Uses with statement, can have a border. They go one above the other when multiple ones exist.
+    - He used an expander above the container - then when he clicked the expander all the widgets in the container appeared at once.
+- Video 28
+    - Empty widget. He showed a loop counting down seconds using the write widget. That created as many writes to the screen as seconds in the count. 
+    - Then he put the loop in an empty widget and the write statement overwrote the previous write statement so there was only one line of text on the screen.
+- Video 29
+    - Multiple pages. He added a sidebar to the webpage and a folder named pages to the project. Each python/streamlit program that he put in the folder showed up on the screen in the sidebar.
+    - The programs in the pages folder are full streamlit programs, including imports and widgets.
