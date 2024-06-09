@@ -1,0 +1,2920 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Streamlit_I%20wish_I_Knew/">
+      
+      
+        <link rel="next" href="../streamlit_blog/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+    
+    
+      
+        <title>Streamlit Capabilities - GT_PKB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#streamlit-capabilities" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="GT_PKB" class="md-header__button md-logo" aria-label="GT_PKB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GT_PKB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Streamlit Capabilities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="GT_PKB" class="md-nav__button md-logo" aria-label="GT_PKB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    GT_PKB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Another Terry Attempt at Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Cornell_Notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cornell (kind of) Notes Template
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Customtkinter
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Customtkinter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Customtkinter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customtkinter Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Customtkinter/Basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customtkinter Install and Basic Template
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Customtkinter/Buttons/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customtkinter Buttons
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Codemy SQLite3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Codemy SQLite3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/Codemy_SQLite3/Create_connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create SQLite Connection Codemy.com Video 04 - Codemy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/Codemy_SQLite3/ManageTables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding Data in SQLite3 Video 06 - Codemy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    OOP
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            OOP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Python/OOP/Object_Oriented_Python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object Oriented Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tkinter
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tkinter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tkinter/vid1_window_basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Window Basics Video 01 - Brocode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tkinter/vid2_labels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tkinter Labels - Brocode Video 02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    WebDevelopment
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            WebDevelopment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HeadFirst_HTML_and_CSS_Notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Use a Head First Book to study
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../html_css/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML/CSS John Smilga Udemy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../omv_vs_casaos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tech Dad Youtube Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wa4e_notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Applications for Everyone
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bootstrap
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Bootstrap
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Bootstrap/bootstrap5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Net Ninja Bootstrap 5 Videos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Streamlit
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            Streamlit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streamlit_Crash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JCharisTech on Youtube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Streamlit_I%20wish_I_Knew/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Streamlit I wish I Knew
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Streamlit Capabilities
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../streamlit_blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Streamlit Blog Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Django
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7">
+            <span class="md-nav__icon md-icon"></span>
+            Django
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/dennis_ivy_todo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dennis ivy todo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_2" id="__nav_7_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Caleb Crash Course
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Caleb Crash Course
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/caleb_django_crash_course/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Caleb Curry Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/cdjcc1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup - Caleb Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/cdjcc2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    New Project - Caleb Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/cdjcc3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model View Template - Caleb Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/cdjcc4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First View - Caleb Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/cdjcc5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Templates - Caleb Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/cdjcc6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More Complicated Data - Caleb Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/cdjcc7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Models and Databases - Caleb Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/cdjcc8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working With Real Data - Caleb Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Caleb_Crash_Course/cdjcc9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Detailed View - Caleb Django Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_3" id="__nav_7_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Codemy Django Intro
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Codemy Django Intro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Django_Intro/00-Home/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00-Codemy Django Intro Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Django_Intro/01-Stuff_For_Every_Django_Project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 Stuff For Every Django Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Django_Intro/02-Set_Up_App/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02-These Are Steps to Add an App to a Django Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Django_Intro/03-Django-Basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03-Django Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_4" id="__nav_7_7_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Codemy Simple Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            Codemy Simple Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 03
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 04
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 05
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 06
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 07
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_08/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 08
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_09_%26_10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 09 & 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Codemy_Simple_Blog/Codemy_Simple_Blog_Video_13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codemy Django Simple Blog Series 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_5" id="__nav_7_7_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Corey Schaefer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Corey Schaefer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Corey_Schaefer/Video%201%20Getting%20Started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corey Schaefer Django Video Series 01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_6" id="__nav_7_7_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Django For Beginners Book
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            Django For Beginners Book
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Django_For_Beginners_Book/Chapter_1_Initial_Setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1 Initial Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Django_For_Beginners_Book/Chapter_2_Hello_World_App/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Django for Beginners
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_7" id="__nav_7_7_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Udemy Django Academind
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_7">
+            <span class="md-nav__icon md-icon"></span>
+            Udemy Django Academind
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Udemy_Django_Academind/section1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Django Practical Guide Section 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_8" id="__nav_7_7_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Very Academy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Very Academy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Very_Academy/Course_Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../django/Very_Academy/Django_Initiation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Django Initiation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Flask
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Flask
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flask/Flask_Tutorial_for_Beginners-Clever_%20Programmer_%20Youtube/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flask Tutorial for Beginners - Clever Programmer Youtube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flask/bootcamp_section_7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flask Bootcamp Jose Section 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8_3" id="__nav_7_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Corey Schaefer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            Corey Schaefer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flask/Corey_Schaefer/Corey%20Schaefer%20Flask%20Video%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corey Schaefer Flask Video Series 01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flask/Corey_Schaefer/Corey%20Schaefer%20Flask%20Video%202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corey Schaefer Flask Video Series 02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Nicegui
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            Nicegui
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nicegui/basic_template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Basic Template for nicegui
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nicegui/crud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Videos by Sri Edy Nurcahyo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nicegui/nicegui_capabilities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Turtle Code Nicegui Videos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nicegui/text_elements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text elements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/jekyll/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jekyll
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mkdocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/tiddlywiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tiddlywiki
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="streamlit-capabilities">Streamlit Capabilities</h1>
+<ul>
+<li>Video 1<ul>
+<li>streamlit run main.py  - To run a streamlit program in the terminal</li>
+<li>default port is 8501</li>
+<li>st.title - Like an H1</li>
+<li>st.header - Like an H2</li>
+<li>st.subheader - Like an H3</li>
+<li>st.text - Plain text</li>
+</ul>
+</li>
+<li>Video 2<ul>
+<li>st.markdown() - just put markdown in the parentheses</li>
+<li>
+<h1 id="s-for-headers-more-s-means-smaller-header">'s for headers - more #'s means smaller header</h1>
+</li>
+<li><code>**bold text**</code></li>
+<li><code>*italic text*</code></li>
+<li>`&gt; Put something in block quotes</li>
+<li>`st.markdown("1. First Item\n 2. Second Item") # An ordered list</li>
+<li><code>st.code(str)</code> Where str = "print('Hello World')"  Not markdown - part of Streamlit</li>
+<li>st.markdown(---) # Horizontal rule</li>
+<li><code>st.markdown('[Google](https://www.google.com/)')</code> # Link in Markdown</li>
+<li>tables are possible - but painful looking IMHO</li>
+<li>json feature st.json(json)</li>
+<li>emojis possible</li>
+</ul>
+</li>
+<li>Video 3<ul>
+<li>Metric function - able to show numbers with delta to indicate changes over time</li>
+<li>tables using pandas library</li>
+<li>dataframe is a table that allows sorting by clicking column headers</li>
+</ul>
+</li>
+<li>Video 4<ul>
+<li>Images - can have captions, change height (he didn't show so ?) and width</li>
+<li>Audio - can specify start time in seconds</li>
+<li>Video - can specify start time in seconds</li>
+</ul>
+</li>
+<li>Video 5<ul>
+<li>Button widget - has a value of True or False</li>
+<li>text_input - type into a one line field. Can have line of code above the box</li>
+<li>st.write() - writes text onto web page - not sure how this is different from st.text</li>
+</ul>
+</li>
+<li>Video 6<ul>
+<li>Download button - takes a file object and needs a file name for the downloaded file.</li>
+</ul>
+</li>
+<li>Video 7<ul>
+<li>Created a list of two images - when he pointed an image element at the list rather than a single image, the images ended up side by side rather than on top of each other.</li>
+<li>He also created a list of captions and used that in the image element rather than one caption. And it worked.</li>
+<li>Link Button - link_button, text for button and http address are parameters</li>
+</ul>
+</li>
+<li>Video 8<ul>
+<li>Checkbox widget. Each checkbox is a separate widget. Has a value of True or False</li>
+<li>Column variable allows to put checkboxes side by side rather than above and below. I suspect this is more versatile than just checkboxes</li>
+</ul>
+</li>
+<li>Video 9<ul>
+<li>Toggle widget - slider appearance. Boolean value of True or False</li>
+<li>Again uses columns to put toggles side by side</li>
+</ul>
+</li>
+<li>Video 10<ul>
+<li>Radio buttons - Only one button active at a time.</li>
+<li>A title and then a list of button titles in the parameters.</li>
+<li>Uses button titles to determine which button is active (True)</li>
+<li>Can use index parameter to select which button is active initially, set to None to not select a button initially</li>
+<li>Can use disabled parameter to deactivate all the buttons.</li>
+</ul>
+</li>
+<li>Video 11<ul>
+<li>Select Box - dropdown with 2 or more items to select from</li>
+<li>First parameter is title for box, second is a list of options</li>
+<li>Only one item can be selected</li>
+</ul>
+</li>
+<li>Video 12<ul>
+<li>MultiSelect  - like Select Box but can select more than one item.</li>
+<li>First parameter is title for box, second is a list of options, third parameter is default selection</li>
+<li>Can be multiple default options</li>
+<li>Multiselect returns a list of the selected options</li>
+</ul>
+</li>
+<li>Video 13<ul>
+<li>Slider object - slide to value in a range</li>
+<li>First parameter is title of object, 2nd and 3rd are range of slider, 4th is default value</li>
+<li>Returns the value of the slider object</li>
+<li>He used it to dynamically change the width of an image</li>
+</ul>
+</li>
+<li>Video 14<ul>
+<li>Select slider object - Slider but just to specific values.</li>
+<li>First parameter is title, then list with each valid value.</li>
+<li>Returns value the slider is on</li>
+</ul>
+</li>
+<li>Video 15<ul>
+<li>Text Input Object - Single line text box</li>
+<li>First parameter is title above the box</li>
+<li>Returns content of box - can press enter or setup a button</li>
+</ul>
+</li>
+<li>Video 16<ul>
+<li>Number input - Like text input but with + and - at the end</li>
+<li>First parameter is title above the box</li>
+<li>No need to convert from string to do math like if you used text_input</li>
+</ul>
+</li>
+<li>Video 17<ul>
+<li>Text Area widget - multiline text input</li>
+<li>Parameters - title, default value and placeholder value inside the widget</li>
+<li>Can also set max characters that can be entered in widget</li>
+<li>returns content of text entered inside the widget</li>
+</ul>
+</li>
+<li>Video 18<ul>
+<li>Date input object - returns 2019-03-28</li>
+<li>Current date is default starting date but that can be changed</li>
+</ul>
+</li>
+<li>Video 19<ul>
+<li>Time input object - returns 21:45 (I think - wasn't very clear)</li>
+</ul>
+</li>
+<li>Video 20<ul>
+<li>File uploader widget - let's you select more than one file at a time</li>
+</ul>
+</li>
+<li>Video 21<ul>
+<li>Color Picker - parameters are a title above and the default (starting color)</li>
+<li>Returns a hex code </li>
+</ul>
+</li>
+<li>Video 22<ul>
+<li>Create a Form </li>
+<li>Use <code>with</code> statement - then lists all widgets inside form underneath it</li>
+<li>A Submit button is required - when it's pressed all the values returned by the widgets are updated</li>
+<li>On the screen there's a border around the form </li>
+</ul>
+</li>
+<li>Video 23<ul>
+<li>Sidebar Widget</li>
+<li>Uses <code>with</code> statement and widgets are indented under that</li>
+<li>Those all show up on the left side of the screen in a light gray object</li>
+</ul>
+</li>
+<li>Video 24<ul>
+<li>Columns </li>
+<li>Set up columns then add widgets to the columns using with statement</li>
+<li>widgets for each column indented under that columns with statement</li>
+</ul>
+</li>
+<li>Video 25<ul>
+<li>Tabs</li>
+<li>Create tabs `tab1, tab2, tab3 = ['Football', 'Basketball', 'Hockey']</li>
+<li>Then with statements for each tab followed by that tab's widgets</li>
+</ul>
+</li>
+<li>Video 26<ul>
+<li>Expander widget - shows single line with a title (he used 'See explanation'), then there's a dropdown with the full explanation. </li>
+</ul>
+</li>
+<li>Video 27<ul>
+<li>Container widget. Uses with statement, can have a border. They go one above the other when multiple ones exist.</li>
+<li>He used an expander above the container - then when he clicked the expander all the widgets in the container appeared at once.</li>
+</ul>
+</li>
+<li>Video 28<ul>
+<li>Empty widget. He showed a loop counting down seconds using the write widget. That created as many writes to the screen as seconds in the count. </li>
+<li>Then he put the loop in an empty widget and the write statement overwrote the previous write statement so there was only one line of text on the screen.</li>
+</ul>
+</li>
+<li>Video 29<ul>
+<li>Multiple pages. He added a sidebar to the webpage and a folder named pages to the project. Each python/streamlit program that he put in the folder showed up on the screen in the sidebar.</li>
+<li>The programs in the pages folder are full streamlit programs, including imports and widgets.</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Streamlit_I%20wish_I_Knew/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Streamlit I wish I Knew">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Streamlit I wish I Knew
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../streamlit_blog/" class="md-footer__link md-footer__link--next" aria-label="Next: Streamlit Blog Video">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Streamlit Blog Video
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.footer"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+    
+  </body>
+</html>
