@@ -1,0 +1,3 @@
+- Gleam book 1. Chance hit by truck, lands on Centurion, becomes Karma Cultivator
+    - Finished and liked. Next book March 6, 2024. 
+    - June 9, 2024 - rereading book 1 and planning to read book 2 next.

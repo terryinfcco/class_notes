@@ -1,0 +1,1 @@
+A Budding Scientist in a Fantasy World. Read book1 and liked it. Next book in September 2024.

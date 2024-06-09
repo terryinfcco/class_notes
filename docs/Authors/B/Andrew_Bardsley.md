@@ -1,0 +1,2 @@
+- Roman Litrpg - nope!
+- Survival a world to build - guy and dog alone on new world. Didn't grab me.
