@@ -1,0 +1,2 @@
+- Apocalypse Parenting. Finished 1 and 2. Very good. Following so should see additional books. 
+- Apocalypse Parenting 3-liked maybe not as much as first 2, but well worth continuing.

@@ -1,0 +1,2 @@
+- Blair Wilkes - Half Fairy, Half Witch, Hunter boyfriend, Dad in Prison - ran out of steam on this one.
+- Biblio Witch - Works in Magic Library, Pursued by Vampires, Reaper boyfriend
