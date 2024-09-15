@@ -1,5 +1,5 @@
 ---
-title: Create SQLite Connection Codemy.com Video 04 - Codemy
+title: 04 -Create SQLite Connection Codemy.com
 tags:
     - python
     - sqlite3

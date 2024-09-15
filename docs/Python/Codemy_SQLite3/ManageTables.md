@@ -1,5 +1,5 @@
 ---
-title: Adding Data in SQLite3 Video 06 - Codemy
+title: 06 - Adding Data in SQLite3 - Codemy
 tags:
     - python
     - sqlite3
