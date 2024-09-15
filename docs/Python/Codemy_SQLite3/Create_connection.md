@@ -1,5 +1,5 @@
 ---
-title: 04 -Create SQLite Connection Codemy.com
+title: 04_05 -Create SQLite Connection and SQLite Table Codemy.com
 tags:
     - python
     - sqlite3
@@ -28,8 +28,7 @@ conn = sqlite3.connect('customer.db')
 # conn = sqlite3.connect(':memory:')
 
 ```
-
-## This Creates a Database Table
+## Create SQLite Database Table Codemy.com Video 5
 
 Tables contain all the data in a database. Pretty much like a spreadsheet, tables and columns. 
 

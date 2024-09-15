@@ -2,7 +2,7 @@
 # Script to try to get class notes going locally
 
 # cd /home/terry/github/class_notes
-cd /home/terry/class_notes
+cd /home/terry/git/class_notes
 source venv/bin/activate
 mkdocs serve &
 sleep 2
